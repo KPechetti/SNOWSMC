@@ -1,0 +1,910 @@
+@font-face {
+  font-family: 'OffSMDL2';
+  src: url("/public/fonts/OffSMDL2.2.68.woff") format("woff"); }
+
+@-ms-viewport {
+  width: auto; }
+
+body {
+  margin: 0; }
+  body.colorful {
+    background: #E6E6E6; }
+    body.colorful.macexcel, body.colorful.maconenote, body.colorful.macoutlook, body.colorful.macpowerpoint, body.colorful.macword {
+      background: #F1F1F1; }
+    body.colorful.olwac {
+      background: #FAF9F8; }
+  body.white {
+    background: #FFF; }
+    body.white.olwac {
+      background: #FAF9F8; }
+  body.black {
+    background: #262626; }
+  body.darkgray {
+    background: #666; }
+  body.highcontrastblack {
+    background: #000; }
+  body.wdwaenduser, body.xlwaenduser, body.ppwaenduser {
+    background: #EDEBE9; }
+
+.bodyContent {
+  padding: 0; }
+
+.ocSearchPaneScoped.ocSearchNavOn {
+  padding: 0;
+  margin: 0; }
+
+.olwac #f1NavBar,
+.iwapp #f1NavBar {
+  margin-left: 15px;
+  margin-right: 15px; }
+
+.f1NavBar {
+  display: flex;
+  margin-top: 14px; }
+
+.f1NavBtn {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-top: 5px; }
+  .f1NavBtn:disabled {
+    opacity: 0.5;
+    filter: grayscale(100%); }
+  .f1NavBtn:hover, .f1NavBtn:active {
+    text-decoration: none; }
+  .f1NavBtn:focus {
+    text-decoration: none; }
+  .f1NavBtn > span {
+    vertical-align: middle; }
+  .f1NavBtn.colorful.winword, .f1NavBtn.colorful.wdwaenduser, .f1NavBtn.colorful.macword {
+    color: #124078; }
+  .f1NavBtn.colorful.excel, .f1NavBtn.colorful.macexcel {
+    color: #0E5C2F; }
+  .f1NavBtn.colorful.powerpnt .f1NavBtn.colorful.macpowerpoint {
+    color: #A92B1A; }
+  .f1NavBtn.colorful.outlook, .f1NavBtn.colorful.macoutlook {
+    color: #106EBE; }
+  .f1NavBtn.colorful.msaccess {
+    color: #912C2F; }
+  .f1NavBtn.colorful.visio, .f1NavBtn.colorful.visio365, .f1NavBtn.colorful.visio_std {
+    color: #192D64; }
+  .f1NavBtn.colorful.onenote, .f1NavBtn.colorful.maconenote {
+    color: #6C2F68; }
+  .f1NavBtn.colorful.mspub {
+    color: #23645C; }
+  .f1NavBtn.colorful.winproj, .f1NavBtn.colorful.winproj_std {
+    color: #256323; }
+  .f1NavBtn.white.winword, .f1NavBtn.white.wdwaenduser, .f1NavBtn.white.macword, .f1NavBtn.fluent.winword, .f1NavBtn.fluent.wdwaenduser, .f1NavBtn.fluent.macword {
+    color: #2B579A; }
+  .f1NavBtn.white.excel, .f1NavBtn.white.macexcel, .f1NavBtn.fluent.excel, .f1NavBtn.fluent.macexcel {
+    color: #217346; }
+  .f1NavBtn.white.powerpnt .f1NavBtn.white.macpowerpoint, .f1NavBtn.fluent.powerpnt .f1NavBtn.white.macpowerpoint, .f1NavBtn.white.powerpnt .f1NavBtn.fluent.macpowerpoint, .f1NavBtn.fluent.powerpnt .f1NavBtn.fluent.macpowerpoint {
+    color: #B7472A; }
+  .f1NavBtn.white.outlook, .f1NavBtn.white.macoutlook, .f1NavBtn.fluent.outlook, .f1NavBtn.fluent.macoutlook {
+    color: #106EBE; }
+  .f1NavBtn.white.msaccess, .f1NavBtn.fluent.msaccess {
+    color: #A4373A; }
+  .f1NavBtn.white.visio, .f1NavBtn.white.visio365, .f1NavBtn.white.visio_std, .f1NavBtn.fluent.visio, .f1NavBtn.fluent.visio365, .f1NavBtn.fluent.visio_std {
+    color: #3955A3; }
+  .f1NavBtn.white.onenote, .f1NavBtn.white.maconenote, .f1NavBtn.fluent.onenote, .f1NavBtn.fluent.maconenote {
+    color: #80397B; }
+  .f1NavBtn.white.mspub, .f1NavBtn.fluent.mspub {
+    color: #077568; }
+  .f1NavBtn.white.winproj, .f1NavBtn.white.winproj_std, .f1NavBtn.fluent.winproj, .f1NavBtn.fluent.winproj_std {
+    color: #31752F; }
+  .f1NavBtn.white.iwapp, .f1NavBtn.fluent.iwapp {
+    color: #0078D7; }
+  .f1NavBtn.black {
+    color: #F3F3F3; }
+    .f1NavBtn.black.winword, .f1NavBtn.black.wdwaenduser, .f1NavBtn.black.macword {
+      color: #A5B9D1; }
+    .f1NavBtn.black.excel, .f1NavBtn.black.macexcel {
+      color: #9FCDB3; }
+    .f1NavBtn.black.powerpnt .f1NavBtn.black.macpowerpoint {
+      color: #FDC9B5; }
+    .f1NavBtn.black.outlook, .f1NavBtn.black.macoutlook {
+      color: #B3D6F2; }
+    .f1NavBtn.black.msaccess {
+      color: #F8C8CC; }
+    .f1NavBtn.black.visio, .f1NavBtn.black.visio365, .f1NavBtn.black.visio_std {
+      color: #D7E0F7; }
+    .f1NavBtn.black.onenote, .f1NavBtn.black.maconenote {
+      color: #F0DAEE; }
+    .f1NavBtn.black.mspub {
+      color: #CFE6E3; }
+    .f1NavBtn.black.winproj, .f1NavBtn.black.winproj_std {
+      color: #CFEDCE; }
+  .f1NavBtn.darkgray {
+    color: #F3F3F3; }
+  .f1NavBtn.highcontrastblack {
+    color: #FFF; }
+  .f1NavBtn.colorful:hover, .f1NavBtn.colorful:focus {
+    background: #D2D2D2; }
+  .f1NavBtn.white:hover, .f1NavBtn.white:focus, .f1NavBtn.fluent:hover, .f1NavBtn.fluent:focus {
+    background: #F3F3F3; }
+  .f1NavBtn.black:hover, .f1NavBtn.black:focus {
+    background: #2f2f2f; }
+  .f1NavBtn.darkgray:hover, .f1NavBtn.darkgray:focus {
+    background: #505050; }
+  .f1NavBtn.highcontrastblack:hover, .f1NavBtn.highcontrastblack:focus {
+    background: #ffff01;
+    color: #000; }
+  .f1NavBtn.macexcel, .f1NavBtn.maconenote, .f1NavBtn.macoutlook, .f1NavBtn.macpowerpoint, .f1NavBtn.macword {
+    width: 30px;
+    margin-top: 0px; }
+    .f1NavBtn.macexcel:hover, .f1NavBtn.macexcel:focus, .f1NavBtn.maconenote:hover, .f1NavBtn.maconenote:focus, .f1NavBtn.macoutlook:hover, .f1NavBtn.macoutlook:focus, .f1NavBtn.macpowerpoint:hover, .f1NavBtn.macpowerpoint:focus, .f1NavBtn.macword:hover, .f1NavBtn.macword:focus {
+      background: transparent; }
+
+#f1NavBack.macexcel, #f1NavBack.maconenote, #f1NavBack.macoutlook, #f1NavBack.macpowerpoint, #f1NavBack.macword {
+  margin-left: 22px; }
+
+html[dir='rtl'] #f1NavBack.macexcel, html[dir='rtl'] #f1NavBack.maconenote, html[dir='rtl'] #f1NavBack.macoutlook, html[dir='rtl'] #f1NavBack.macpowerpoint, html[dir='rtl'] #f1NavBack.macword {
+  margin-right: 22px;
+  margin-left: 0; }
+
+#f1NavHome.macexcel, #f1NavHome.maconenote, #f1NavHome.macoutlook, #f1NavHome.macpowerpoint, #f1NavHome.macword {
+  margin-left: 6px; }
+
+html[dir='rtl'] #f1NavHome.macexcel, html[dir='rtl'] #f1NavHome.maconenote, html[dir='rtl'] #f1NavHome.macoutlook, html[dir='rtl'] #f1NavHome.macpowerpoint, html[dir='rtl'] #f1NavHome.macword {
+  margin-right: 6px; }
+
+.f1NavHome_mac {
+  height: 25px;
+  width: 30px;
+  vertical-align: top; }
+
+.icon-arrow-back:before {
+  font-family: 'OffSMDL2';
+  font-size: 15px;
+  font-weight: 600;
+  content: '\E72B'; }
+
+.icon-arrow-back.macexcel:before, .icon-arrow-back.maconenote:before, .icon-arrow-back.macoutlook:before, .icon-arrow-back.macpowerpoint:before, .icon-arrow-back.macword:before {
+  vertical-align: 3px;
+  content: ''; }
+
+html[dir='rtl'] .icon-arrow-back:before {
+  font-family: 'OffSMDL2';
+  font-size: 15px;
+  font-weight: 600;
+  content: '\E72A'; }
+
+html[dir='rtl'] .icon-arrow-back.macexcel:before, html[dir='rtl'] .icon-arrow-back.maconenote:before, html[dir='rtl'] .icon-arrow-back.macoutlook:before, html[dir='rtl'] .icon-arrow-back.macpowerpoint:before, html[dir='rtl'] .icon-arrow-back.macword:before {
+  vertical-align: 3px;
+  content: ''; }
+
+.icon-arrow-forward:before {
+  font-family: 'OffSMDL2';
+  font-size: 15px;
+  font-weight: 600;
+  content: '\E72A'; }
+
+.icon-arrow-forward.macexcel:before, .icon-arrow-forward.maconenote:before, .icon-arrow-forward.macoutlook:before, .icon-arrow-forward.macpowerpoint:before, .icon-arrow-forward.macword:before {
+  vertical-align: 3px;
+  content: ''; }
+
+html[dir='rtl'] .icon-arrow-forward:before {
+  font-family: 'OffSMDL2';
+  font-size: 15px;
+  font-weight: 600;
+  content: '\E72B'; }
+
+html[dir='rtl'] .icon-arrow-forward.macexcel:before, html[dir='rtl'] .icon-arrow-forward.maconenote:before, html[dir='rtl'] .icon-arrow-forward.macoutlook:before, html[dir='rtl'] .icon-arrow-forward.macpowerpoint:before, html[dir='rtl'] .icon-arrow-forward.macword:before {
+  vertical-align: 3px;
+  content: ''; }
+
+.icon-more-actions:before {
+  font-family: 'OffSMDL2';
+  font-size: 15px;
+  font-weight: 600;
+  content: '\E712'; }
+
+.loader {
+  margin: auto;
+  box-sizing: border-box;
+  border: 2px solid #dce6ee;
+  border-radius: 50%;
+  border-top: 2px solid #3498db;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.dropdown-menu {
+  border: 1px solid #D2D2D2;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  left: auto; }
+  .dropdown-menu > li > a {
+    min-width: 174px;
+    height: 30px;
+    padding: 0 10px 0 8px;
+    color: #505050;
+    font-family: "Segoe UI", "Segoe UI Web", "Segoe UI Symbol", "wf_segoe-ui_normal", "Helvetica Neue", "BBAlpha Sans", "S60 Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 28px; }
+    .dropdown-menu > li > a.macexcel, .dropdown-menu > li > a.maconenote, .dropdown-menu > li > a.macoutlook, .dropdown-menu > li > a.macpowerpoint, .dropdown-menu > li > a.macword {
+      font-family: -apple-system, "Segoe UI", "Segoe UI Web", "Segoe UI Symbol", "wf_segoe-ui_normal", "Helvetica Neue", "BBAlpha Sans", "S60 Sans", Arial, sans-serif; }
+    .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+      color: #505050; }
+      .dropdown-menu > li > a:hover.winword, .dropdown-menu > li > a:hover.wdwaenduser, .dropdown-menu > li > a:hover.macword, .dropdown-menu > li > a:focus.winword, .dropdown-menu > li > a:focus.wdwaenduser, .dropdown-menu > li > a:focus.macword {
+        background: #E3ECFA; }
+      .dropdown-menu > li > a:hover.excel, .dropdown-menu > li > a:hover.macexcel, .dropdown-menu > li > a:focus.excel, .dropdown-menu > li > a:focus.macexcel {
+        background: #E9F5EE; }
+      .dropdown-menu > li > a:hover.powerpnt .dropdown-menu > li > a:hover.macpowerpoint, .dropdown-menu > li > a:focus.powerpnt .dropdown-menu > li > a:hover.macpowerpoint, .dropdown-menu > li > a:hover.powerpnt .dropdown-menu > li > a:focus.macpowerpoint, .dropdown-menu > li > a:focus.powerpnt .dropdown-menu > li > a:focus.macpowerpoint {
+        background: #FCF0ED; }
+      .dropdown-menu > li > a:hover.outlook, .dropdown-menu > li > a:hover.macoutlook, .dropdown-menu > li > a:focus.outlook, .dropdown-menu > li > a:focus.macoutlook {
+        background: #CCE3F5; }
+  .dropdown-menu span {
+    font-size: 14px;
+    margin-right: 8px; }
+
+html[dir='rtl'] .dropdown-menu {
+  text-align: right; }
+  html[dir='rtl'] .dropdown-menu span {
+    margin-right: 0;
+    margin-left: 8px; }
+
+.icon-home {
+  vertical-align: -1px; }
+  .icon-home:before {
+    font-family: 'OffSMDL2';
+    content: '\E80F'; }
+  .icon-home.icon-home-top:before {
+    font-size: 18px; }
+
+.icon-help-center {
+  vertical-align: -2px; }
+  .icon-help-center:before {
+    font-family: 'OffSMDL2';
+    content: '\E946'; }
+
+.icon-contact-us {
+  vertical-align: -1px; }
+  .icon-contact-us:before {
+    font-family: 'OffSMDL2';
+    content: '\E717'; }
+
+.icon-dev {
+  padding-right: 10px; }
+  .icon-dev:before {
+    font-family: 'OffSMDL2';
+    font-size: 16px;
+    font-weight: 100;
+    content: '\E946';
+    padding-right: 5px;
+    vertical-align: middle; }
+
+.f1SearchBar {
+  display: inline-block;
+  width: 235px;
+  height: 32px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 8px; }
+  .f1SearchBar.macexcel, .f1SearchBar.maconenote, .f1SearchBar.macoutlook, .f1SearchBar.macpowerpoint, .f1SearchBar.macword {
+    border: 1px solid;
+    box-shadow: none;
+    border-radius: 4px;
+    width: 316px;
+    margin-left: 18px;
+    height: 25px; }
+  .f1SearchBar .supSuggestionItem {
+    font-family: "Segoe UI Semilight", "wf_segoe-ui_semilight", "wf_segoe-ui_normal", "Segoe UI", "Segoe UI Web", "Segoe UI Symbol", "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    padding: 3px 19px; }
+    .f1SearchBar .supSuggestionItem.macexcel, .f1SearchBar .supSuggestionItem.maconenote, .f1SearchBar .supSuggestionItem.macoutlook, .f1SearchBar .supSuggestionItem.macpowerpoint, .f1SearchBar .supSuggestionItem.macword {
+      font-family: -apple-system, "Segoe UI Semilight", "wf_segoe-ui_semilight", "wf_segoe-ui_normal", "Segoe UI", "Segoe UI Web", "Segoe UI Symbol", "Helvetica Neue", Arial, sans-serif; }
+  .f1SearchBar.colorful, .f1SearchBar.white, .f1SearchBar.iwapp, .f1SearchBar.olwac {
+    background: #FFF;
+    border-color: #c4c4c4; }
+    .f1SearchBar.colorful .supSuggestionItem, .f1SearchBar.white .supSuggestionItem, .f1SearchBar.iwapp .supSuggestionItem, .f1SearchBar.olwac .supSuggestionItem {
+      background-color: #FFF; }
+  .f1SearchBar.darkgray, .f1SearchBar.black {
+    background: #444;
+    border-color: #808080; }
+    .f1SearchBar.darkgray.olwac, .f1SearchBar.black.olwac {
+      background: #3b3a39; }
+    .f1SearchBar.darkgray .supSuggestionItem, .f1SearchBar.black .supSuggestionItem {
+      background: #f0f0f0; }
+  .f1SearchBar.colorful .supSuggestionItemHighLight,
+  .f1SearchBar.colorful .supSuggestionItem:hover,
+  .f1SearchBar.colorful .supSuggestionItemText:hover, .f1SearchBar.black .supSuggestionItemHighLight,
+  .f1SearchBar.black .supSuggestionItem:hover,
+  .f1SearchBar.black .supSuggestionItemText:hover, .f1SearchBar.darkgray .supSuggestionItemHighLight,
+  .f1SearchBar.darkgray .supSuggestionItem:hover,
+  .f1SearchBar.darkgray .supSuggestionItemText:hover {
+    background: #d2d2d2; }
+  .f1SearchBar.white .supSuggestionItemHighLight,
+  .f1SearchBar.white .supSuggestionItem:hover,
+  .f1SearchBar.white .supSuggestionItemText:hover {
+    background: #d4e0f1; }
+  .f1SearchBar .supAutoSuggestContainer {
+    border: 1px solid;
+    width: 230px;
+    margin: 0 0 0 -1px !important; }
+  .f1SearchBar.colorful.focus {
+    border-color: #989898; }
+    .f1SearchBar.colorful.focus.macexcel, .f1SearchBar.colorful.focus.maconenote, .f1SearchBar.colorful.focus.macoutlook, .f1SearchBar.colorful.focus.macpowerpoint, .f1SearchBar.colorful.focus.macword {
+      border-color: #94C2F3;
+      box-shadow: 0px 0px 4px #94C2F3; }
+  .f1SearchBar.colorful .supAutoSuggestContainer {
+    border-color: #989898; }
+    .f1SearchBar.colorful .supAutoSuggestContainer.macexcel, .f1SearchBar.colorful .supAutoSuggestContainer.maconenote, .f1SearchBar.colorful .supAutoSuggestContainer.macoutlook, .f1SearchBar.colorful .supAutoSuggestContainer.macpowerpoint, .f1SearchBar.colorful .supAutoSuggestContainer.macword {
+      border-color: #94C2F3;
+      box-shadow: 0px 0px 4px #94C2F3; }
+  .f1SearchBar.white.focus {
+    border-color: #3f6db4; }
+  .f1SearchBar.white .supAutoSuggestContainer {
+    border-color: #3f6db4; }
+  .f1SearchBar.darkgray .supAutoSuggestContainer, .f1SearchBar.black .supAutoSuggestContainer {
+    border-color: #989898; }
+  .f1SearchBar .supSuggestionList {
+    margin: 0;
+    padding-left: 0; }
+  .f1SearchBar.highcontrastblack {
+    border: 1px #FFF solid; }
+    .f1SearchBar.highcontrastblack.focus {
+      border-color: #1aebff; }
+    .f1SearchBar.highcontrastblack input {
+      color: white;
+      background: #000; }
+      .f1SearchBar.highcontrastblack input::placeholder {
+        color: #FFF; }
+      .f1SearchBar.highcontrastblack input::appearance {
+        color: #FFF; }
+
+input[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button; }
+
+.f1SearchBox {
+  font-family: "Segoe UI Semilight", "wf_segoe-ui_semilight", "wf_segoe-ui_normal", "Segoe UI", "Segoe UI Web", "Segoe UI Symbol", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  border: none;
+  width: 200px;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+  .f1SearchBox.macexcel, .f1SearchBox.maconenote, .f1SearchBox.macoutlook, .f1SearchBox.macpowerpoint, .f1SearchBox.macword {
+    font-family: -apple-system, "Segoe UI Semilight", "wf_segoe-ui_semilight", "wf_segoe-ui_normal", "Segoe UI", "Segoe UI Web", "Segoe UI Symbol", "Helvetica Neue", Arial, sans-serif; }
+  .f1SearchBox.colorful {
+    background: #FFF;
+    color: #737373; }
+    .f1SearchBox.colorful::selection {
+      background: #737373;
+      color: #FFF; }
+    .f1SearchBox.colorful::-moz-selection {
+      background: #737373;
+      color: #FFF; }
+    .f1SearchBox.colorful:focus {
+      color: #262626; }
+  .f1SearchBox.white {
+    background: #FFF;
+    color: #737373; }
+    .f1SearchBox.white::selection {
+      background: #a4b8d0;
+      color: #262626; }
+    .f1SearchBox.white::-moz-selection {
+      background: #a4b8d0;
+      color: #262626; }
+    .f1SearchBox.white:focus {
+      color: #262626; }
+  .f1SearchBox.darkgray, .f1SearchBox.black {
+    background: #444;
+    color: #FFF; }
+    .f1SearchBox.darkgray.olwac, .f1SearchBox.black.olwac {
+      background: #3b3a39; }
+    .f1SearchBox.darkgray::selection, .f1SearchBox.black::selection {
+      background: #2a579a;
+      color: #FFF; }
+    .f1SearchBox.darkgray::-moz-selection, .f1SearchBox.black::-moz-selection {
+      background: #2a579a;
+      color: #FFF; }
+    .f1SearchBox.darkgray:focus, .f1SearchBox.black:focus {
+      color: #FFF; }
+  .f1SearchBox.macexcel, .f1SearchBox.maconenote, .f1SearchBox.macoutlook, .f1SearchBox.macpowerpoint, .f1SearchBox.macword {
+    background: #FFF;
+    height: 18px;
+    width: 283px;
+    padding: 2px 2px;
+    margin: 0;
+    font-size: 12px; }
+    .f1SearchBox.macexcel::selection, .f1SearchBox.maconenote::selection, .f1SearchBox.macoutlook::selection, .f1SearchBox.macpowerpoint::selection, .f1SearchBox.macword::selection {
+      background: #94C2F3;
+      color: #000; }
+    .f1SearchBox.macexcel::-moz-selection, .f1SearchBox.maconenote::-moz-selection, .f1SearchBox.macoutlook::-moz-selection, .f1SearchBox.macpowerpoint::-moz-selection, .f1SearchBox.macword::-moz-selection {
+      background: #94C2F3;
+      color: #000; }
+    .f1SearchBox.macexcel:focus, .f1SearchBox.maconenote:focus, .f1SearchBox.macoutlook:focus, .f1SearchBox.macpowerpoint:focus, .f1SearchBox.macword:focus {
+      color: #000; }
+
+.f1SearchBtn {
+  font-family: 'OffSMDL2';
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  background: transparent;
+  padding: 0; }
+  .f1SearchBtn.colorful.winword, .f1SearchBtn.colorful.wdwaenduser, .f1SearchBtn.colorful.macword {
+    color: #124078; }
+  .f1SearchBtn.colorful.excel, .f1SearchBtn.colorful.macexcel {
+    color: #0E5C2F; }
+  .f1SearchBtn.colorful.powerpnt .f1SearchBtn.colorful.macpowerpoint {
+    color: #A92B1A; }
+  .f1SearchBtn.colorful.outlook, .f1SearchBtn.colorful.macoutlook {
+    color: #106EBE; }
+  .f1SearchBtn.colorful.msaccess {
+    color: #912C2F; }
+  .f1SearchBtn.colorful.visio, .f1SearchBtn.colorful.visio365, .f1SearchBtn.colorful.visio_std {
+    color: #192D64; }
+  .f1SearchBtn.colorful.onenote, .f1SearchBtn.colorful.maconenote {
+    color: #6C2F68; }
+  .f1SearchBtn.colorful.mspub {
+    color: #23645C; }
+  .f1SearchBtn.colorful.winproj, .f1SearchBtn.colorful.winproj_std {
+    color: #256323; }
+  .f1SearchBtn.white.winword, .f1SearchBtn.white.wdwaenduser, .f1SearchBtn.white.macword, .f1SearchBtn.fluent.winword, .f1SearchBtn.fluent.wdwaenduser, .f1SearchBtn.fluent.macword {
+    color: #2B579A; }
+  .f1SearchBtn.white.excel, .f1SearchBtn.white.macexcel, .f1SearchBtn.fluent.excel, .f1SearchBtn.fluent.macexcel {
+    color: #217346; }
+  .f1SearchBtn.white.powerpnt .f1SearchBtn.white.macpowerpoint, .f1SearchBtn.fluent.powerpnt .f1SearchBtn.white.macpowerpoint, .f1SearchBtn.white.powerpnt .f1SearchBtn.fluent.macpowerpoint, .f1SearchBtn.fluent.powerpnt .f1SearchBtn.fluent.macpowerpoint {
+    color: #B7472A; }
+  .f1SearchBtn.white.outlook, .f1SearchBtn.white.macoutlook, .f1SearchBtn.fluent.outlook, .f1SearchBtn.fluent.macoutlook {
+    color: #106EBE; }
+  .f1SearchBtn.white.msaccess, .f1SearchBtn.fluent.msaccess {
+    color: #A4373A; }
+  .f1SearchBtn.white.visio, .f1SearchBtn.white.visio365, .f1SearchBtn.white.visio_std, .f1SearchBtn.fluent.visio, .f1SearchBtn.fluent.visio365, .f1SearchBtn.fluent.visio_std {
+    color: #3955A3; }
+  .f1SearchBtn.white.onenote, .f1SearchBtn.white.maconenote, .f1SearchBtn.fluent.onenote, .f1SearchBtn.fluent.maconenote {
+    color: #80397B; }
+  .f1SearchBtn.white.mspub, .f1SearchBtn.fluent.mspub {
+    color: #077568; }
+  .f1SearchBtn.white.winproj, .f1SearchBtn.white.winproj_std, .f1SearchBtn.fluent.winproj, .f1SearchBtn.fluent.winproj_std {
+    color: #31752F; }
+  .f1SearchBtn.white.iwapp, .f1SearchBtn.fluent.iwapp {
+    color: #0078D7; }
+  .f1SearchBtn.black {
+    color: #F3F3F3; }
+    .f1SearchBtn.black.winword, .f1SearchBtn.black.wdwaenduser, .f1SearchBtn.black.macword {
+      color: #A5B9D1; }
+    .f1SearchBtn.black.excel, .f1SearchBtn.black.macexcel {
+      color: #9FCDB3; }
+    .f1SearchBtn.black.powerpnt .f1SearchBtn.black.macpowerpoint {
+      color: #FDC9B5; }
+    .f1SearchBtn.black.outlook, .f1SearchBtn.black.macoutlook {
+      color: #B3D6F2; }
+    .f1SearchBtn.black.msaccess {
+      color: #F8C8CC; }
+    .f1SearchBtn.black.visio, .f1SearchBtn.black.visio365, .f1SearchBtn.black.visio_std {
+      color: #D7E0F7; }
+    .f1SearchBtn.black.onenote, .f1SearchBtn.black.maconenote {
+      color: #F0DAEE; }
+    .f1SearchBtn.black.mspub {
+      color: #CFE6E3; }
+    .f1SearchBtn.black.winproj, .f1SearchBtn.black.winproj_std {
+      color: #CFEDCE; }
+  .f1SearchBtn.darkgray {
+    color: #F3F3F3; }
+  .f1SearchBtn.highcontrastblack {
+    color: #FFF; }
+  .f1SearchBtn.macexcel, .f1SearchBtn.maconenote, .f1SearchBtn.macoutlook, .f1SearchBtn.macpowerpoint, .f1SearchBtn.macword {
+    padding-bottom: 4px;
+    margin-top: -1px; }
+
+.ocSearchPaneScoped #ocSearchButton {
+  top: 5px; }
+  .ocSearchPaneScoped #ocSearchButton.macexcel, .ocSearchPaneScoped #ocSearchButton.maconenote, .ocSearchPaneScoped #ocSearchButton.macoutlook, .ocSearchPaneScoped #ocSearchButton.macpowerpoint, .ocSearchPaneScoped #ocSearchButton.macword {
+    top: 3px; }
+
+html[dir='rtl'] .supCont .ocSearchPaneScoped #ocSearchButton {
+  padding-bottom: 0; }
+
+#ReactViewBody #ocSearchForm {
+  position: relative;
+  width: 92%; }
+
+#ReactViewBody #f1SearchBar {
+  position: relative;
+  width: 91%; }
+
+#ReactViewBody #ocSearchBox {
+  width: 86%;
+  margin-left: 8px; }
+  #ReactViewBody #ocSearchBox:focus {
+    outline: none; }
+
+#ReactViewBody #Help {
+  padding-left: 5px;
+  overflow: hidden; }
+
+#ReactViewBody .f1NavBar {
+  margin-top: 6px;
+  margin-left: 7px; }
+
+#ReactViewBody .ocSearchIFrame {
+  display: none; }
+
+.ocSearchIFrameDiv {
+  margin-top: 7px;
+  height: calc(100vh - 46px); }
+  .ocSearchIFrameDiv.macexcel, .ocSearchIFrameDiv.maconenote, .ocSearchIFrameDiv.macoutlook, .ocSearchIFrameDiv.macpowerpoint, .ocSearchIFrameDiv.macword {
+    height: calc(100vh - 117px); }
+
+.noNavIFrame {
+  height: calc(100vh - 7px); }
+
+.ocSearchIFrame {
+  height: 100%;
+  width: 100%;
+  border-width: 0; }
+
+.navbarEnvIndicator {
+  position: absolute;
+  right: 20px;
+  top: 5px; }
+  .navbarEnvIndicator.black {
+    color: #FFF;
+    background: #262626; }
+  .navbarEnvIndicator.darkgray {
+    color: #FFF;
+    background: #666; }
+  .navbarEnvIndicator.colorful {
+    background: #E6E6E6; }
+    .navbarEnvIndicator.colorful.macexcel, .navbarEnvIndicator.colorful.maconenote, .navbarEnvIndicator.colorful.macoutlook, .navbarEnvIndicator.colorful.macpowerpoint, .navbarEnvIndicator.colorful.macword {
+      background: #F1F1F1; }
+  .navbarEnvIndicator.white {
+    background: #FFF; }
+
+html[dir='rtl'] .navbarEnvIndicator {
+  left: 20px;
+  right: auto; }
+
+.msftteams,
+.msteamsedu,
+.msteamsedutr,
+.msteamsedust,
+.msteamsfr,
+.msteamsp,
+.learnapp {
+  overflow: hidden; }
+  .msftteams.colorful #root #Help,
+  .msftteams.white #root #Help,
+  .msteamsedu.colorful #root #Help,
+  .msteamsedu.white #root #Help,
+  .msteamsedutr.colorful #root #Help,
+  .msteamsedutr.white #root #Help,
+  .msteamsedust.colorful #root #Help,
+  .msteamsedust.white #root #Help,
+  .msteamsfr.colorful #root #Help,
+  .msteamsfr.white #root #Help,
+  .msteamsp.colorful #root #Help,
+  .msteamsp.white #root #Help,
+  .learnapp.colorful #root #Help,
+  .learnapp.white #root #Help {
+    background: #f5f5f5 !important; }
+    .msftteams.colorful #root #Help a,
+    .msftteams.colorful #root #Help .ocpExpandoHeadTitleContainer,
+    .msftteams.colorful #root #Help .ocpExpandoHeadChevronContainer,
+    .msftteams.colorful #root #Help #ocSearchButton,
+    .msftteams.white #root #Help a,
+    .msftteams.white #root #Help .ocpExpandoHeadTitleContainer,
+    .msftteams.white #root #Help .ocpExpandoHeadChevronContainer,
+    .msftteams.white #root #Help #ocSearchButton,
+    .msteamsedu.colorful #root #Help a,
+    .msteamsedu.colorful #root #Help .ocpExpandoHeadTitleContainer,
+    .msteamsedu.colorful #root #Help .ocpExpandoHeadChevronContainer,
+    .msteamsedu.colorful #root #Help #ocSearchButton,
+    .msteamsedu.white #root #Help a,
+    .msteamsedu.white #root #Help .ocpExpandoHeadTitleContainer,
+    .msteamsedu.white #root #Help .ocpExpandoHeadChevronContainer,
+    .msteamsedu.white #root #Help #ocSearchButton,
+    .msteamsedutr.colorful #root #Help a,
+    .msteamsedutr.colorful #root #Help .ocpExpandoHeadTitleContainer,
+    .msteamsedutr.colorful #root #Help .ocpExpandoHeadChevronContainer,
+    .msteamsedutr.colorful #root #Help #ocSearchButton,
+    .msteamsedutr.white #root #Help a,
+    .msteamsedutr.white #root #Help .ocpExpandoHeadTitleContainer,
+    .msteamsedutr.white #root #Help .ocpExpandoHeadChevronContainer,
+    .msteamsedutr.white #root #Help #ocSearchButton,
+    .msteamsedust.colorful #root #Help a,
+    .msteamsedust.colorful #root #Help .ocpExpandoHeadTitleContainer,
+    .msteamsedust.colorful #root #Help .ocpExpandoHeadChevronContainer,
+    .msteamsedust.colorful #root #Help #ocSearchButton,
+    .msteamsedust.white #root #Help a,
+    .msteamsedust.white #root #Help .ocpExpandoHeadTitleContainer,
+    .msteamsedust.white #root #Help .ocpExpandoHeadChevronContainer,
+    .msteamsedust.white #root #Help #ocSearchButton,
+    .msteamsfr.colorful #root #Help a,
+    .msteamsfr.colorful #root #Help .ocpExpandoHeadTitleContainer,
+    .msteamsfr.colorful #root #Help .ocpExpandoHeadChevronContainer,
+    .msteamsfr.colorful #root #Help #ocSearchButton,
+    .msteamsfr.white #root #Help a,
+    .msteamsfr.white #root #Help .ocpExpandoHeadTitleContainer,
+    .msteamsfr.white #root #Help .ocpExpandoHeadChevronContainer,
+    .msteamsfr.white #root #Help #ocSearchButton,
+    .msteamsp.colorful #root #Help a,
+    .msteamsp.colorful #root #Help .ocpExpandoHeadTitleContainer,
+    .msteamsp.colorful #root #Help .ocpExpandoHeadChevronContainer,
+    .msteamsp.colorful #root #Help #ocSearchButton,
+    .msteamsp.white #root #Help a,
+    .msteamsp.white #root #Help .ocpExpandoHeadTitleContainer,
+    .msteamsp.white #root #Help .ocpExpandoHeadChevronContainer,
+    .msteamsp.white #root #Help #ocSearchButton,
+    .learnapp.colorful #root #Help a,
+    .learnapp.colorful #root #Help .ocpExpandoHeadTitleContainer,
+    .learnapp.colorful #root #Help .ocpExpandoHeadChevronContainer,
+    .learnapp.colorful #root #Help #ocSearchButton,
+    .learnapp.white #root #Help a,
+    .learnapp.white #root #Help .ocpExpandoHeadTitleContainer,
+    .learnapp.white #root #Help .ocpExpandoHeadChevronContainer,
+    .learnapp.white #root #Help #ocSearchButton {
+      color: #6264a7 !important; }
+      .msftteams.colorful #root #Help a:focus,
+      .msftteams.colorful #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msftteams.colorful #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msftteams.colorful #root #Help #ocSearchButton:focus,
+      .msftteams.white #root #Help a:focus,
+      .msftteams.white #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msftteams.white #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msftteams.white #root #Help #ocSearchButton:focus,
+      .msteamsedu.colorful #root #Help a:focus,
+      .msteamsedu.colorful #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msteamsedu.colorful #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msteamsedu.colorful #root #Help #ocSearchButton:focus,
+      .msteamsedu.white #root #Help a:focus,
+      .msteamsedu.white #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msteamsedu.white #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msteamsedu.white #root #Help #ocSearchButton:focus,
+      .msteamsedutr.colorful #root #Help a:focus,
+      .msteamsedutr.colorful #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msteamsedutr.colorful #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msteamsedutr.colorful #root #Help #ocSearchButton:focus,
+      .msteamsedutr.white #root #Help a:focus,
+      .msteamsedutr.white #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msteamsedutr.white #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msteamsedutr.white #root #Help #ocSearchButton:focus,
+      .msteamsedust.colorful #root #Help a:focus,
+      .msteamsedust.colorful #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msteamsedust.colorful #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msteamsedust.colorful #root #Help #ocSearchButton:focus,
+      .msteamsedust.white #root #Help a:focus,
+      .msteamsedust.white #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msteamsedust.white #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msteamsedust.white #root #Help #ocSearchButton:focus,
+      .msteamsfr.colorful #root #Help a:focus,
+      .msteamsfr.colorful #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msteamsfr.colorful #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msteamsfr.colorful #root #Help #ocSearchButton:focus,
+      .msteamsfr.white #root #Help a:focus,
+      .msteamsfr.white #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msteamsfr.white #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msteamsfr.white #root #Help #ocSearchButton:focus,
+      .msteamsp.colorful #root #Help a:focus,
+      .msteamsp.colorful #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msteamsp.colorful #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msteamsp.colorful #root #Help #ocSearchButton:focus,
+      .msteamsp.white #root #Help a:focus,
+      .msteamsp.white #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msteamsp.white #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msteamsp.white #root #Help #ocSearchButton:focus,
+      .learnapp.colorful #root #Help a:focus,
+      .learnapp.colorful #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .learnapp.colorful #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .learnapp.colorful #root #Help #ocSearchButton:focus,
+      .learnapp.white #root #Help a:focus,
+      .learnapp.white #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .learnapp.white #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .learnapp.white #root #Help #ocSearchButton:focus {
+        outline: 1px solid #000; }
+    .msftteams.colorful #root #Help .TeamsIcon,
+    .msftteams.white #root #Help .TeamsIcon,
+    .msteamsedu.colorful #root #Help .TeamsIcon,
+    .msteamsedu.white #root #Help .TeamsIcon,
+    .msteamsedutr.colorful #root #Help .TeamsIcon,
+    .msteamsedutr.white #root #Help .TeamsIcon,
+    .msteamsedust.colorful #root #Help .TeamsIcon,
+    .msteamsedust.white #root #Help .TeamsIcon,
+    .msteamsfr.colorful #root #Help .TeamsIcon,
+    .msteamsfr.white #root #Help .TeamsIcon,
+    .msteamsp.colorful #root #Help .TeamsIcon,
+    .msteamsp.white #root #Help .TeamsIcon,
+    .learnapp.colorful #root #Help .TeamsIcon,
+    .learnapp.white #root #Help .TeamsIcon {
+      fill: #6264a7 !important; }
+  .msftteams.black #root #Help,
+  .msteamsedu.black #root #Help,
+  .msteamsedutr.black #root #Help,
+  .msteamsedust.black #root #Help,
+  .msteamsfr.black #root #Help,
+  .msteamsp.black #root #Help,
+  .learnapp.black #root #Help {
+    background: #1f1f1f !important; }
+    .msftteams.black #root #Help a,
+    .msftteams.black #root #Help .ocpExpandoHeadTitleContainer,
+    .msftteams.black #root #Help .ocpExpandoHeadChevronContainer,
+    .msftteams.black #root #Help #ocSearchButton,
+    .msteamsedu.black #root #Help a,
+    .msteamsedu.black #root #Help .ocpExpandoHeadTitleContainer,
+    .msteamsedu.black #root #Help .ocpExpandoHeadChevronContainer,
+    .msteamsedu.black #root #Help #ocSearchButton,
+    .msteamsedutr.black #root #Help a,
+    .msteamsedutr.black #root #Help .ocpExpandoHeadTitleContainer,
+    .msteamsedutr.black #root #Help .ocpExpandoHeadChevronContainer,
+    .msteamsedutr.black #root #Help #ocSearchButton,
+    .msteamsedust.black #root #Help a,
+    .msteamsedust.black #root #Help .ocpExpandoHeadTitleContainer,
+    .msteamsedust.black #root #Help .ocpExpandoHeadChevronContainer,
+    .msteamsedust.black #root #Help #ocSearchButton,
+    .msteamsfr.black #root #Help a,
+    .msteamsfr.black #root #Help .ocpExpandoHeadTitleContainer,
+    .msteamsfr.black #root #Help .ocpExpandoHeadChevronContainer,
+    .msteamsfr.black #root #Help #ocSearchButton,
+    .msteamsp.black #root #Help a,
+    .msteamsp.black #root #Help .ocpExpandoHeadTitleContainer,
+    .msteamsp.black #root #Help .ocpExpandoHeadChevronContainer,
+    .msteamsp.black #root #Help #ocSearchButton,
+    .learnapp.black #root #Help a,
+    .learnapp.black #root #Help .ocpExpandoHeadTitleContainer,
+    .learnapp.black #root #Help .ocpExpandoHeadChevronContainer,
+    .learnapp.black #root #Help #ocSearchButton {
+      color: #a6a7dc !important; }
+      .msftteams.black #root #Help a:focus,
+      .msftteams.black #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msftteams.black #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msftteams.black #root #Help #ocSearchButton:focus,
+      .msteamsedu.black #root #Help a:focus,
+      .msteamsedu.black #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msteamsedu.black #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msteamsedu.black #root #Help #ocSearchButton:focus,
+      .msteamsedutr.black #root #Help a:focus,
+      .msteamsedutr.black #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msteamsedutr.black #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msteamsedutr.black #root #Help #ocSearchButton:focus,
+      .msteamsedust.black #root #Help a:focus,
+      .msteamsedust.black #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msteamsedust.black #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msteamsedust.black #root #Help #ocSearchButton:focus,
+      .msteamsfr.black #root #Help a:focus,
+      .msteamsfr.black #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msteamsfr.black #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msteamsfr.black #root #Help #ocSearchButton:focus,
+      .msteamsp.black #root #Help a:focus,
+      .msteamsp.black #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .msteamsp.black #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .msteamsp.black #root #Help #ocSearchButton:focus,
+      .learnapp.black #root #Help a:focus,
+      .learnapp.black #root #Help .ocpExpandoHeadTitleContainer:focus,
+      .learnapp.black #root #Help .ocpExpandoHeadChevronContainer:focus,
+      .learnapp.black #root #Help #ocSearchButton:focus {
+        outline: 1px solid #FFF; }
+    .msftteams.black #root #Help .TeamsIcon,
+    .msteamsedu.black #root #Help .TeamsIcon,
+    .msteamsedutr.black #root #Help .TeamsIcon,
+    .msteamsedust.black #root #Help .TeamsIcon,
+    .msteamsfr.black #root #Help .TeamsIcon,
+    .msteamsp.black #root #Help .TeamsIcon,
+    .learnapp.black #root #Help .TeamsIcon {
+      fill: #a6a7dc !important; }
+  .msftteams.highcontrastblack #root #Help #ocSearchButton:focus,
+  .msteamsedu.highcontrastblack #root #Help #ocSearchButton:focus,
+  .msteamsedutr.highcontrastblack #root #Help #ocSearchButton:focus,
+  .msteamsedust.highcontrastblack #root #Help #ocSearchButton:focus,
+  .msteamsfr.highcontrastblack #root #Help #ocSearchButton:focus,
+  .msteamsp.highcontrastblack #root #Help #ocSearchButton:focus,
+  .learnapp.highcontrastblack #root #Help #ocSearchButton:focus {
+    outline: 1px solid #1aebff; }
+  .msftteams.highcontrastblack #root #Help .TeamsIcon,
+  .msteamsedu.highcontrastblack #root #Help .TeamsIcon,
+  .msteamsedutr.highcontrastblack #root #Help .TeamsIcon,
+  .msteamsedust.highcontrastblack #root #Help .TeamsIcon,
+  .msteamsfr.highcontrastblack #root #Help .TeamsIcon,
+  .msteamsp.highcontrastblack #root #Help .TeamsIcon,
+  .learnapp.highcontrastblack #root #Help .TeamsIcon {
+    fill: #FFF !important; }
+  .msftteams #f1SearchBar,
+  .msteamsedu #f1SearchBar,
+  .msteamsedutr #f1SearchBar,
+  .msteamsedust #f1SearchBar,
+  .msteamsfr #f1SearchBar,
+  .msteamsp #f1SearchBar,
+  .learnapp #f1SearchBar {
+    border-radius: 3px; }
+    .msftteams #f1SearchBar.focus,
+    .msteamsedu #f1SearchBar.focus,
+    .msteamsedutr #f1SearchBar.focus,
+    .msteamsedust #f1SearchBar.focus,
+    .msteamsfr #f1SearchBar.focus,
+    .msteamsp #f1SearchBar.focus,
+    .learnapp #f1SearchBar.focus {
+      border-bottom: 2px solid #6264a7 !important; }
+  .msftteams #Help,
+  .msteamsedu #Help,
+  .msteamsedutr #Help,
+  .msteamsedust #Help,
+  .msteamsfr #Help,
+  .msteamsp #Help,
+  .learnapp #Help {
+    padding-left: 0 !important; }
+  .msftteams #ocSearchForm,
+  .msteamsedu #ocSearchForm,
+  .msteamsedutr #ocSearchForm,
+  .msteamsedust #ocSearchForm,
+  .msteamsfr #ocSearchForm,
+  .msteamsp #ocSearchForm,
+  .learnapp #ocSearchForm {
+    width: 32% !important; }
+    .msftteams #ocSearchForm #ocSearchButton,
+    .msteamsedu #ocSearchForm #ocSearchButton,
+    .msteamsedutr #ocSearchForm #ocSearchButton,
+    .msteamsedust #ocSearchForm #ocSearchButton,
+    .msteamsfr #ocSearchForm #ocSearchButton,
+    .msteamsp #ocSearchForm #ocSearchButton,
+    .learnapp #ocSearchForm #ocSearchButton {
+      position: absolute;
+      right: 5px;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1); }
+  .msftteams .f1NavBar,
+  .msteamsedu .f1NavBar,
+  .msteamsedutr .f1NavBar,
+  .msteamsedust .f1NavBar,
+  .msteamsfr .f1NavBar,
+  .msteamsp .f1NavBar,
+  .learnapp .f1NavBar {
+    margin-left: 0 !important; }
+  .msftteams #ocSearchIFrame,
+  .msteamsedu #ocSearchIFrame,
+  .msteamsedutr #ocSearchIFrame,
+  .msteamsedust #ocSearchIFrame,
+  .msteamsfr #ocSearchIFrame,
+  .msteamsp #ocSearchIFrame,
+  .learnapp #ocSearchIFrame {
+    display: normal; }
+  .msftteams #TeamsHomeIcon,
+  .msteamsedu #TeamsHomeIcon,
+  .msteamsedutr #TeamsHomeIcon,
+  .msteamsedust #TeamsHomeIcon,
+  .msteamsfr #TeamsHomeIcon,
+  .msteamsp #TeamsHomeIcon,
+  .learnapp #TeamsHomeIcon {
+    width: 30px;
+    height: 35px;
+    margin-left: 2px;
+    margin-right: 10px;
+    cursor: pointer; }
+  .msftteams #TeamsBackIcon,
+  .msteamsedu #TeamsBackIcon,
+  .msteamsedutr #TeamsBackIcon,
+  .msteamsedust #TeamsBackIcon,
+  .msteamsfr #TeamsBackIcon,
+  .msteamsp #TeamsBackIcon,
+  .learnapp #TeamsBackIcon {
+    width: 30px;
+    height: 35px;
+    margin-left: 10px;
+    cursor: pointer; }
+/* Styles for in-app contact support */
+.caption.text-counter {
+  color: #6A6A6A; }
+
+div[dir="rtl"] .icon-arrow-back:before {
+  font-family: 'OffSMDL2';
+  font-size: 15px;
+  font-weight: 600;
+  content: '\E72A'; }
+
+/*# sourceMappingURL=reactNav.css.map*/
